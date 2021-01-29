@@ -1,0 +1,15 @@
+{{#if loading}}
+<div class="notification loadingBox">
+    Loading …
+</div>
+{{/if}}
+{{#if info}}
+<div class="notification infoBox">
+    <span>Info</span>
+</div>
+{{/if}}
+{{#if errorMessage}}
+<div class="notification errorBox">
+    <span>{{errorMessage}}</span>
+</div>
+{{/if}}
