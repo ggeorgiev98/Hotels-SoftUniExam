@@ -1,5 +1,8 @@
 <section id="viewAddhotel">
     <h2>Edit existing hotel</h2>
+    {{#if error}}
+        {{> notification}}
+    {{/if}}
     <form id="formAddhotel" action="/edit/{{_id}}" method="POST">
         <label for="hotel">Hotel name:</label>
         <input type="text" id="hotel" name="name" value="{{name}}">
@@ -9,6 +12,6 @@
         <input type="number" id="free-rooms" name="freeRooms" value="{{freeRooms}}">
         <label for="imgUrl">Image:</label>
         <input type="text" id="imgUrl" name="imageUrl" value="{{imageUrl}}">
-        <input type="submit" class="create" value="Add">
+        <input type="submit" class="create" value="Edit">
     </form>
 </section>
