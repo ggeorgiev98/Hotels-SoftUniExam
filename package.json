@@ -1,7 +1,7 @@
 {
     "name": "cube-workshop",
     "description": "Cube workshop for SoftUni",
-    "authors": "Deni Marinova",
+    "authors": "Georgi Georgiev, Deni Marinova(softuni students assistant)",
     "version": "1.0.0",
     "main": "index.js",
     "dependencies": {
