@@ -9,10 +9,6 @@ const getAllHotels = async (callback) => {
     return hotels;
 };
 
-const saveHotel = async (req, res) => {
-
-}
-
 const getHotel = async (id) => {
     const hotel = await Hotel.findById(id).lean();
     return hotel;
